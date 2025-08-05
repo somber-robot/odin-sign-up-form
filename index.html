@@ -13,7 +13,7 @@
                 <img class="logo-image" src="images/logo.png" alt="">
                 <span class="logo-text">ODIN</span>
             </div>
-            <p class="bg-credit-text">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            <p class="bg-credit-text">Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
         </div>
         <div class="form-section">
             <div class="opening-paragraph">
@@ -23,7 +23,7 @@
             </div>
             <div class="main-form">
                 <p>Let's do this!</p>
-                <form action="#">
+                <form action="https://httpbin.org/post" id="form" method="post">
                     <div>
                         <label for="first-name">FIRST NAME</label>
                         <br>
@@ -47,17 +47,18 @@
                     <div>
                         <label for="pwd">PASSWORD</label>
                         <br>
-                        <input type="password" name="password" id="pwd" minlength="5">
+                        <input type="password" name="password" id="pwd" minlength="5" required>
                     </div>
                     <div>
                         <label for="confirm-pwd">CONFIRM PASSWORD</label>
                         <br>
-                        <input type="password" name="confirm-password" id="confirm-pwd" minlength="5">
+                        <input type="password" name="confirm-password" id="confirm-pwd" minlength="5" required>
                     </div>
                 </form>
             </div>
             <div class="submit-and-forgot">
-
+                <button type="submit" form="form">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </div>
