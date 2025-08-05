@@ -6,3 +6,68 @@
     font-weight: normal;
     font-display: swap;
 }
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: darkgray;
+}
+
+a{
+    color: inherit;
+}
+
+#container{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex: 3 1 auto;
+}
+
+.image-section{
+    flex: 1.5;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar{
+    background-color: rgba(0, 0, 0, 0.452);
+    display: flex;
+    padding: 10px 0;
+    margin-top: 40%;
+}
+
+.logo-image{
+    width: 20%;
+    margin-left: auto;
+}
+
+.logo-text{
+    font-family: "norse";
+    font-size: 80px;
+    color: white;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bg-credit-text{
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    font-size: 12px;
+}
+
+.bg-credit-text a:hover{
+    text-decoration: none;
+}
+
+.form-section{
+    background-color: aliceblue;
+    flex: 3;
+}
